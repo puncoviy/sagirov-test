@@ -693,6 +693,7 @@ a {
 
     .header__menu-list {
         flex-direction: column;
+        gap: 0;
     }
 
     .promo__title {
