@@ -29,9 +29,11 @@
     <header class="header">
         <div class="container">
             <nav class="header__menu">
-                <a class="header__logo" href="#">
-                    <img src="./img/logo.svg" alt="SpaceX">
-                </a>
+                <div class="header__logo-box">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo" src="./img/logo.svg" alt="SpaceX">
+                    </a>
+                </div>
                 <ul class="header__menu-list">
                     <li class="header__menu-item">
                         <a class="header__menu-link" href="#">Главная</a>
@@ -55,5 +57,39 @@
             </nav>
         </div>
     </header>
+    <main>
+        <section class="promo">
+            <div class="container">
+                <div class="promo__inner">
+                    <div class="promo__info">
+                        <h1 class="visually-hidden">Путешествие на Марс вместе со SpaceX</h1>
+                        <p class="promo__title">Путешествие</p>
+                        <p class="promo__subtitle">на красную планету</p>
+                        <div class="promo__img-box">
+                            <div class="promo__img-box-decor"></div>
+                            <img class="promo__img" src="./img/mars.png" alt="Mars">
+                        </div>
+                        <div class="promo__btn-box">
+                            <a class="promo__btn" href="">Начать путешествие</a>
+                        </div>
+                    </div>
+                    <ul class="promo__features-list">
+                        <li class="promo__features-item">
+                            <p class="promo__features-item--text">мы<span class="center">1</span>на рынке</p>
+                        </li>
+                        <li class="promo__features-item">
+                            <p class="promo__features-item--text">гарантируем<span class="center">50%</span>безопасность</p>
+                        </li>
+                        <li class="promo__features-item">
+                            <p class="promo__features-item--text">календарик за<span class="center">2001<small>г.</small></span>в подарок</p>
+                        </li>
+                        <li class="promo__features-item">
+                            <p class="promo__features-item--text">путешествие<span class="center">597</span>дней</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
