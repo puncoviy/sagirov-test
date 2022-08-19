@@ -1,0 +1,105 @@
+@font-face {
+    font-family: Museo Sans Cyrl;
+    src: url(./fonts/MuseoSansCyrl100.woff) format(woff),
+        url(./fonts/MuseoSansCyrl100.eot) format(eot),
+        url(./fonts/MuseoSansCyrl100.ttf) format(ttf),
+        url(./fonts/MuseoSansCyrl100.otf) format(otf);         
+    font-weight: 100;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: Museo Sans Cyrl;
+    src: url(./fonts/MuseoSansCyrl300.woff) format(woff),
+        url(./fonts/MuseoSansCyrl300.eot) format(eot),
+        url(./fonts/MuseoSansCyrl300.ttf) format(ttf),
+        url(./fonts/MuseoSansCyrl300.otf) format(otf);         
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
+@font-face {
+    font-family: Museo Sans Cyrl;
+    src: url(./fonts/MuseoSansCyrl700.woff) format(woff),
+        url(./fonts/MuseoSansCyrl700.eot) format(eot),
+        url(./fonts/MuseoSansCyrl700.ttf) format(ttf),
+        url(./fonts/MuseoSansCyrl700.otf) format(otf);         
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
+body {
+    font-family: 'Museo Sans Cyrl';
+    font-style: normal;
+    background-color: #010E17;
+    color: #fff;
+    background-image: url(../img/space-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1210px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* HEADER */
+
+.header {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(159, 159, 159, 0.3);
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+}
+
+.header__menu-list {
+    display: flex;
+    gap: 0 38px;
+}
+
+.header__menu-link {
+    position: relative;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 35px;
+    transition: color .5s;
+}
+
+.header__menu-link:hover {
+    color: #9F9F9F;
+}
+
+.header__menu-link::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background-color: transparent;
+    bottom: -10px;
+    left: 0;
+    transition: background-color .5s;
+}
+
+.header__menu-link:hover::after {
+    background-color: #9F9F9F;
+}
